@@ -33,7 +33,9 @@
                     <div class="form-group">
                         <div class="label-text marb3">Nhóm chỉ tiêu</div>
                         <div class="select-custom">
-                            <select name="" id="" class="form-control sl2"></select>
+                            <select name="" id="" class="form-control sl2">
+                                <option value="">Tất cả</option>
+                            </select>
                         </div>
                     </div>
                 </div>
@@ -41,7 +43,9 @@
                     <div class="form-group">
                         <div class="label-text marb3">Loại thời gian</div>
                         <div class="select-custom">
-                            <select name="" id="" class="form-control sl2"></select>
+                            <select name="" id="" class="form-control sl2">
+                                <option value="">Tất cả</option>
+                            </select>
                         </div>
                     </div>
                 </div>
@@ -49,15 +53,19 @@
                     <div class="form-group">
                         <div class="label-text marb3">Năm</div>
                         <div class="select-custom">
-                            <select name="" id="" class="form-control sl2"></select>
+                            <select name="" id="" class="form-control sl2">
+                                <option value="">Tất cả</option>
+                            </select>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-2 col-sm-4 col-xs-12">
                     <div class="form-group">
-                        <div class="label-text marb3">Tỉnh/thành phố</div>
+                        <div class="label-text marb3">Quận/huyện</div>
                         <div class="select-custom">
-                            <select name="" id="" class="form-control sl2"></select>
+                            <select name="" id="" class="form-control sl2">
+                                <option value="">Thành phố Thủ Đức</option>
+                            </select>
                         </div>
                     </div>
                 </div>
@@ -65,7 +73,9 @@
                     <div class="form-group">
                         <div class="label-text marb3"> Thủ tục</div>
                         <div class="select-custom">
-                            <select name="" id="" class="form-control sl2"></select>
+                            <select name="" id="" class="form-control sl2">
+                                <option value="">Tất cả</option>
+                            </select>
                         </div>
                     </div>
                 </div>
@@ -282,6 +292,7 @@
 
         </div>
     </div>
+    <div class="noti-import">Hệ thống đang chạy thử nghiệm - Dữ liệu sẽ hiển thị chính xác và đầy đủ từ 31/12/2022</div>
     <style>
         .map-box{
             display: flex;
@@ -298,6 +309,15 @@
             stroke:#fff !important;
             stroke-dasharray: 5 !important;
             
+        }
+        .noti-import{
+            text-align: center;
+            font-size: 18px;
+            text-transform: uppercase;
+            padding: 10px 20px;
+            color: rgb(193, 0, 0);
+            font-weight: bold;
+
         }
     </style>
     <script>

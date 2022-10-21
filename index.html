@@ -1,0 +1,734 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Thông tin kế hoạch mở rộng</title>
+	 <meta content="width=device-width, initial-scale=1" name="viewport" id="viewport"></meta>
+    <meta content="Thời trang nam phong cách trẻ trung năng động của nam giới, xu thế thời trang 2016" name="description">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"></meta>
+
+    <meta content="width=device-width, initial-scale=1" name="viewport" id="viewport"></meta>
+    <meta content="index, follow" name="ROBOTS">
+    <link rel="stylesheet" type="text/css" href="vendor/ap8/css/style.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/select2/css/select2.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="vendor/jquery/jquery.2.1.1.min.js"></script>
+
+    <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+    <script type="text/javascript" src="vendor/highchart/highcharts.js"></script>
+    <script src="vendor/select2/js/select2.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css">
+    
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+
+</head>
+<body>
+	<div class="overlay-common"></div>
+	<div class="dashboard-page-content">
+                
+        <div class="form-top">
+            <div class="row">
+                <div class="col-md-2 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                        <div class="label-text marb3">Nhóm chỉ tiêu</div>
+                        <div class="select-custom">
+                            <select name="" id="" class="form-control sl2"></select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                        <div class="label-text marb3">Loại thời gian</div>
+                        <div class="select-custom">
+                            <select name="" id="" class="form-control sl2"></select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                        <div class="label-text marb3">Năm</div>
+                        <div class="select-custom">
+                            <select name="" id="" class="form-control sl2"></select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                        <div class="label-text marb3">Tỉnh/thành phố</div>
+                        <div class="select-custom">
+                            <select name="" id="" class="form-control sl2"></select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-8 col-xs-12">
+                    <div class="form-group">
+                        <div class="label-text marb3"> Thủ tục</div>
+                        <div class="select-custom">
+                            <select name="" id="" class="form-control sl2"></select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-chart-canvas">
+            <div class="widget-box map-box">
+                <div class="map-canvas">
+                    <div id="map" style="height:100%;">
+
+                    </div>
+                </div>
+                <div class="chart-column-note -map">
+                    <div class="title bold marb10">Điểm nhóm chỉ tiêu công khai, minh bạch (điểm tối đa: 16)</div>
+                    <div class="item">
+                        <div class="shape" style="background-color: #219653;"></div>
+                        <div class="text-m">90-100 điểm (Xuất xắc)</div>
+                    </div>
+                    <div class="item">
+                        <div class="shape" style="background-color: #EAC344;"></div>
+                        <div class="text-m">80-90 điểm (Tốt)</div>
+                    </div>
+                    <div class="item">
+                        <div class="shape" style="background-color: #F39738;"></div>
+                        <div class="text-m">70-80 điểm (Khá)</div>
+                    </div>
+                    <div class="item">
+                        <div class="shape" style="background-color: #ED5050;"></div>
+                        <div class="text-m">50- 70 điểm (Trung bình)</div>
+                    </div>
+                    <div class="item">
+                        <div class="shape" style="background-color: #ADBCC3;"></div>
+                        <div class="text-m">Dưới 50 điểm (Yếu)</div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="widget-box">
+                <div class="widget-head">
+                    <div class="title upper">CHƯA CÓ TIÊU ĐỀ</div>
+                </div>
+                <div class="chart-canvas" id="chart3" style="height: 280px;">
+
+                </div>
+            </div>
+            <div class="widget-box -style01">
+                <div class="widget-head center">
+                    <div class="title upper">Tỷ lệ hồ sơ nộp trực tuyến</div>
+                </div>
+                <div class="widget-body">
+                    <div class="chart-circle-full">
+                        <div class="chart-canvas" data-circle-chart="33, 67"
+                            data-colors="#CE7A58, #D6DDE186"
+                            data-categories="Giảm nhiều, Giảm ít" style="height: 160px;">
+
+                        </div>
+                        <div class="total">
+                            33,3%
+                        </div>
+                    </div>
+                    <div class="list-note-tlcc">
+                        <div class="item">
+                            <div class="shape" style="background:#5899DA">
+
+                            </div>
+                            <div class="text-m">Mức độ 3</div>
+                            <div class="number">32,3%</div>
+                        </div>
+                        <div class="item">
+                            <div class="shape" style="background:#F39738">
+
+                            </div>
+                            <div class="text-m">Mức độ 3</div>
+                            <div class="number">32,3%</div>
+                        </div>
+                        <div class="item">
+                            <div class="shape" style="background:#ADBCC3">
+
+                            </div>
+                            <div class="text-m">Mức độ 3</div>
+                            <div class="number">32,3%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="widget-box -style01">
+                <div class="widget-head center">
+                    <div class="title upper">Tỷ lệ cung cấp dịch vụ công trực tuyến</div>
+                </div>
+                <div class="widget-body">
+                    <div class="chart-canvas" data-circle-chart="33, 67, 100" data-colors="#5899DA, #F39738, #D6DDE186"
+                        data-categories="Giảm nhiều, Giảm ít, cl" style="height: 160px;">
+                    
+                    </div>
+                    <div class="list-note-tlcc">
+                        <div class="item">
+                            <div class="shape" style="background:#5899DA">
+
+                            </div>
+                            <div class="text-m">Mức độ 3</div>
+                            <div class="number">32,3%</div>
+                        </div>
+                        <div class="item">
+                            <div class="shape" style="background:#F39738">
+
+                            </div>
+                            <div class="text-m">Mức độ 3</div>
+                            <div class="number">32,3%</div>
+                        </div>
+                        <div class="item">
+                            <div class="shape" style="background:#ADBCC3">
+
+                            </div>
+                            <div class="text-m">Mức độ 3</div>
+                            <div class="number">32,3%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="widget-box">
+                <div class="widget-head">
+                    <div class="title upper">KẾT QUẢ XỬ LÝ HỒ SƠ</div>
+                </div>
+                <div class="chart-canvas" style="height: 300px;" id="chart2"></div>
+                <div class="chart-column-note">
+                    <div class="item">
+                        <div class="shape" style="background-color: #219653;"></div>
+                        <div class="text-m">Tỉ lệ hồ sơ xử lý đúng hạn/trong hạn</div>
+                    </div>
+                    <div class="item">
+                        <div class="shape" style="background-color: #ED5050;"></div>
+                        <div class="text-m">Tỉ lệ hồ sơ xử lý quá hạn</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="widget-box">
+                <div class="widget-head">
+                    <div class="title upper">XẾP HẠNG BỘ NGÀNH</div>
+                </div>
+                <div class="widget-body">
+                    <div class="table-content" style="max-height: 640px;overflow: auto;">
+                        <table class="table-statis">
+                            <thead>
+                                <th>BỘ, NGÀNH</th>
+                                <th>ĐIỂM NĂM 2021</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1. Quảng Ninh</td>
+                                    <td>
+                                        <div class="box-statis">
+                                            <span class="main">67,2</span>
+                                            <div class="percent up">
+                                                <span class="fa fa-caret-up"></span>
+                                                2,5
+                                            </div>
+                                            <div class="progress-box">
+                                                <span class="bar" style="width: 50%;"></span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1. Quảng Ninh</td>
+                                    <td>
+                                        <div class="box-statis">
+                                            <span class="main">67,2</span>
+                                            <div class="percent up">
+                                                <span class="fa fa-caret-up"></span>
+                                                2,5
+                                            </div>
+                                            <div class="progress-box">
+                                                <span class="bar" style="width: 50%;"></span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1. Quảng Ninh</td>
+                                    <td>
+                                        <div class="box-statis">
+                                            <span class="main">67,2</span>
+                                            <div class="percent up">
+                                                <span class="fa fa-caret-up"></span>
+                                                2,5
+                                            </div>
+                                            <div class="progress-box">
+                                                <span class="bar" style="width: 50%;"></span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1. Quảng Ninh</td>
+                                    <td>
+                                        <div class="box-statis">
+                                            <span class="main">67,2</span>
+                                            <div class="percent up">
+                                                <span class="fa fa-caret-up"></span>
+                                                2,5
+                                            </div>
+                                            <div class="progress-box">
+                                                <span class="bar" style="width: 50%;"></span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <style>
+        .map-box{
+            display: flex;
+            flex-direction: column;
+        }
+        .map-canvas{
+            flex: 1;
+            overflow: hidden;
+            position: relative;
+            height: 100%;
+        }
+        .leaflet-interactive{
+            stroke-width: 1.5px !important;
+            stroke:#fff !important;
+            stroke-dasharray: 5 !important;
+            
+        }
+    </style>
+    <script>
+        $(".sl2").select2({
+            minimumResultsForSearch:-1
+        });
+        Highcharts.SparkLine = function (a, b, c) {
+            var hasRenderToArg = typeof a === 'string' || a.nodeName,
+                options = arguments[hasRenderToArg ? 1 : 0],
+                defaultOptions = {
+                    chart: {
+                        backgroundColor: "transparent",
+                        borderWidth: 0,
+                        type: 'area',
+                        style: {
+                            overflow: 'visible'
+                        },
+                        margin: [0, 0, 0, 0],
+                        // small optimalization, saves 1-2 ms each sparkline
+                    },
+                    title: {
+                        text: ''
+                    },
+                    credits: {
+                        enabled: false
+                    },
+                    xAxis: {
+                        labels: {
+                            enabled: false
+                        },
+                        title: {
+                            text: null
+                        },
+                        visible: false,
+                        startOnTick: false,
+                        endOnTick: false,
+                        gridLineWidth: 0,
+                        tickPositions: [],
+                    },
+                    yAxis: {
+                        maxPadding: 0,
+                        minPadding: 0,
+                        gridLineWidth: 0,
+                        labels: {
+                            enabled: false
+                        },
+                        title: {
+                            text: null
+                        },
+                        lineWidth: 0,
+                        plotLines: [{
+                            color: '#d9d9d9',
+                            width: 0,
+                            value: 0
+                        }]
+                    },
+                    legend: {
+                        enabled: false
+                    }
+                };
+
+            options = Highcharts.merge(defaultOptions, options);
+
+            return hasRenderToArg ?
+                new Highcharts.Chart(a, options, c) :
+                new Highcharts.Chart(options, b);
+        };
+
+
+        // Creating 153 sparkline charts is quite fast in modern browsers, but IE8 and mobile
+        // can take some seconds, so we split the input into chunks and apply them in timeouts
+        // in order avoid locking up the browser process and allow interaction.
+        function doChunk() {
+            var start = +new Date(),
+                $tds = $('[data-circle-chart]'),
+                fullLen = $tds.length,
+                n = 0;
+
+            var time = +new Date(),
+                i,
+                len = $tds.length,
+                $td,
+                stringdata,
+                arr,
+                data,
+                chart;
+
+            for (i = 0; i < len; i += 1) {
+                $td = $($tds[i]);
+                var colors = [];
+                var categories = [];
+                colors = $td.attr("data-colors").split(', ');
+                categories = $td.attr("data-categories").split(', ');
+                console.log(colors);
+                console.log("-------");
+                stringdata = $td.data('circle-chart');
+                arr = stringdata.split('; ');
+                data = $.map(arr[0].split(', '), parseFloat);
+                $td.highcharts('SparkLine', {
+                    xAxis: {
+                        categories: categories,
+                    },
+                    series: [{
+                        data: data,
+                        categories: ['a', 'b', 'c', 'd', 'f'],
+                        type: "pie",
+                        colors: colors,
+                        innerSize: '75%',
+                        dataLabels: {
+                            enabled: false,
+                        }
+                    }],
+                    tooltip: {
+                        formatter: function () {
+                            var sliceIndex = this.point.index;
+                            var sliceName = this.series.chart.axes[0].categories[sliceIndex];
+                            return '<b>' + sliceName +
+                                '</b> <br/>    <b>' + this.y + '</b>';
+                        }
+                    },
+                });
+            }
+        }
+        doChunk();
+        Highcharts.chart('chart2', {
+            title: {
+                text: null
+            },
+            xAxis: {
+                tickWidth: 0,
+                gridLineWidth: 0,
+                categories: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12']
+            },
+            yAxis: {
+                title: {
+                    text: '%',
+                },
+                labels: {
+                    y: 5
+                }
+
+
+            },
+            plotOptions: {
+                series: {
+                    pointPadding: 0.05,
+
+                },
+                line: {
+                    pointPlacement: -0.15
+                },
+                column: {
+                    dataLabels: {
+                        enabled: false,
+                        crop: false,
+                        overflow: 'none',
+                        formatter: function () {
+                            console.log(this.point.color);
+                            return '<span style="color:' + this.point.color + '">' + this.y + '</span>';
+                        }
+                    }
+                }
+
+
+            },
+            credits: {
+                enabled: false
+            },
+            legend: {
+                enabled: false
+            },
+            series: [{
+                type: 'column',
+                name: 'Tỉ lệ hồ sơ xử lý đúng hạn/trong hạn',
+                data: [3, 2, 1, 3, 4, 1, 3, 4, 1, 3, 4, 4],
+                color: '#219653',
+
+            }, {
+                type: 'column',
+                name: 'Tỉ lệ hồ sơ xử lý quá hạn ',
+                data: [2, 3, 5, 7, 6, 2, 3, 5, 7, 6, 7, 6],
+                color: '#ED5050',
+
+            }, {
+                type: 'line',
+                name: 'Tỉ lệ hồ sơ xử lý đúng hạn/trong hạn',
+                color: '#219653',
+                data: [3, 2, 1, 3, 4, 1, 3, 4, 1, 3, 4, 4],
+                marker: {
+                    lineWidth: 0,
+                    enabled: false
+                },
+
+            }]
+        });
+        Highcharts.chart('chart3', {
+            chart: {
+                backgroundColor: "transparent",
+                type: 'line',
+                // small optimalization, saves 1-2 ms each sparkline
+            },
+            title: {
+                text: null,
+                
+            },
+            xAxis: {
+                tickWidth: 0,
+                gridLineWidth: 0,
+                categories: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12']
+            },
+            yAxis: {
+                title: {
+                    text: '%',
+                    enabled: false,
+                },
+                labels: {
+                    y: 5
+                },
+                
+
+
+            },
+            plotOptions: {
+                series: {
+                    pointPadding: 0.05,
+
+                },
+                line: {
+                    pointPlacement: -0.15
+                },
+                column: {
+                    dataLabels: {
+                        enabled: false,
+                        crop: false,
+                        overflow: 'none',
+                        formatter: function () {
+                            console.log(this.point.color);
+                            return '<span style="color:' + this.point.color + '">' + this.y + '</span>';
+                        }
+                    }
+                }
+
+
+            },
+            credits: {
+                enabled: false
+            },
+            legend: {
+                enabled: false
+            },
+            series: [{
+                name: 'XU HƯỚNG ĐIỂM',
+                color: '#CE7A58',
+                data: [3, 2, 1, 3, 4, 1, 3, 4, 1, 3, 4, 4],
+                marker: {
+                    lineWidth: 0,
+                    enabled: false
+                },
+
+            }]
+        });
+        
+    </script>
+	
+	<script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript">
+        // initialize the map
+        
+        var banve= L.tileLayer('https://server.arcgisonline.com/arcgis/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}',
+        // var banve= L.tileLayer('./data/tiles/{z}/{x}/{y}@2x.png',
+                {
+                    attribution: 'Tiles by <a href="http://mapc.org">MAPC</a>, Data by <a href="http://mass.gov/mgis">MassGIS</a>',
+                    maxZoom: 17,
+                    minZoom: 10
+                });
+        var vetinh= L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+                {
+                    attribution: 'Tiles by <a href="http://mapc.org">MAPC</a>, Data by <a href="http://mass.gov/mgis">MassGIS</a>',
+                    maxZoom: 17,
+                    minZoom: 10,
+                    
+                });
+        
+        var map = L.map('map',{
+            center: [10.754792,106.6952276],
+            zoom: 9.5,
+            attributionControl:false,
+            layers: [vetinh,banve]
+        });
+
+        // load a tile layer
+       
+        // load GeoJSON from an external file
+        var tinh="./data/gadm36_VNM_1.json";
+        var quan="./data/gadm36_VNM_2.json";
+        var xa="./data/gadm36_VNM_3.json";
+        var statesLayer = L.geoJson(null, {
+                'onEachFeature': 
+                    function (feature, layer) {
+                        layer.on('click', function () {
+                            map.fitBounds(layer.getBounds());
+                            loadCounties(feature.properties.GID_1);
+                        });
+                    } ,
+                'style': style
+                
+                }
+            ).addTo(map);
+        var countiesLayer = L.geoJson(null, {
+                onEachFeature:
+                function (feature, layer) {
+                    layer.on('click', function () {
+                        map.fitBounds(layer.getBounds());
+                        loadXa(feature.properties.GID_2);
+                    });
+                },
+                'style':style1
+        });
+        var xaLayer = L.geoJson(null, {
+                onEachFeature: onEachFeature
+        });
+        $.getJSON(tinh, function (states) {
+            statesLayer.addData(states);
+        });
+        
+        function loadCounties(id) {
+            $.getJSON(quan, function (counties) {
+                countiesLayer.clearLayers();
+                map.addLayer(countiesLayer);
+                map.removeLayer(xaLayer);
+                
+                counties.features.forEach(function (feature) {
+                    if (feature.properties.GID_1 == id) {
+                        countiesLayer.addData(feature);
+                        console.log('================');
+                       
+                       
+                    }
+                });
+                
+            });
+        }     
+        function loadXa(id) {
+            $.getJSON(xa, function (counties) {
+                xaLayer.clearLayers();
+                map.addLayer(xaLayer);
+                counties.features.forEach(function (feature) {
+                    if (feature.properties.GID_2 == id) {
+                        xaLayer.addData(feature);
+                    }
+                });
+            });
+        }     
+        function getColor(d) {
+            return d === 'VN.HC' ? '#ED5050' :
+                    '#ED50502e';
+
+        }
+        function getColor1(d) {
+            return d === 'VN.DC.KK' ? '#000' :
+                    '#ED50502e';
+
+        }
+        
+        function style(feature) {
+            return {
+                fillColor: getColor(feature.properties.HASC_1),
+                weight: 1.5,
+                opacity: 1,
+                color: '#fff',
+                dashArray: '3',
+                fillOpacity: 0.8
+
+            };
+        }
+        function style1(feature) {
+            return {
+                fillColor: getColor1(feature.properties.HASC_2),
+                weight: 1.5,
+                opacity: 1,
+                color: '#fff',
+                dashArray: '3',
+                fillOpacity: 0.8
+
+            };
+        }
+
+        // map.on('click', function () {
+        //     if (map.hasLayer(countiesLayer)) {
+        //         countiesLayer.clearLayers();
+        //         map.removeLayer(countiesLayer);
+        //     }
+        //     if (!map.hasLayer(statesLayer)) {
+        //         map.addLayer(statesLayer);
+        //     }
+        // });   
+        function onEachFeature(feature, layer,value) {
+            var popupContent ="";
+            popupContent = "<p> " + feature.properties.NAME_3 + "</p>";
+            
+
+            if (feature.properties && feature.properties.popupContent) {
+                popupContent += feature.properties.popupContent;
+            }
+            layer.bindPopup(popupContent);
+            
+        }
+        var baseMaps = {
+            "Vệ tinh": vetinh,
+            "Bản vẽ": banve
+            
+        };
+        
+        L.control.layers(baseMaps).addTo(map);
+
+        var textBienDong = L.icon({
+            iconUrl: './data/images/BienDong.png',
+            iconSize: [80, 30], // size of the icon
+        });
+        L.marker([15.500355, 114.1877623], { icon: textBienDong }).addTo(map);
+        var textVinhBB = L.icon({
+            iconUrl: './data/images/VinhBacBo.png',
+            iconSize: [130, 40], // size of the icon
+        });
+        L.marker([19.885867, 107.607729], { icon: textVinhBB }).addTo(map);
+        var textHoangSa = L.icon({
+            iconUrl: './data/images/HoangSa.png',
+            iconSize: [142, 40], // size of the icon
+        });
+        L.marker([16.692096, 112.661811], { icon: textHoangSa }).addTo(map);
+
+    </script>
+</body>
+</html>
